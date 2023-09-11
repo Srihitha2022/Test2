@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        #customer-info {
+            margin-top: 20px;
+        }
+
+        .customer-detail {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .customer-label {
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Customer Information</h1>
+    </header>
+    <div class="container">
+        <div id="customer-info">
+            <div class="customer-detail">
+                <span class="customer-label">Name:</span>
+                <span id="customer-name">John Doe</span>
+            </div>
+            <div class="customer-detail">
+                <span class="customer-label">Email:</span>
+                <span id="customer-email">john.doe@example.com</span>
+            </div>
+            <div class="customer-detail">
+                <span class="customer-label">Phone:</span>
+                <span id="customer-phone">123-456-7890</span>
+            </div>
+        </div>
+        <button id="edit-button">Edit</button>
+    </div>
+
+    <script>
+        const customerName = document.getElementById('customer-name');
+        const customerEmail = document.getElementById('customer-email');
+        const customerPhone = document.getElementById('customer-phone');
+        const editButton = document.getElementById('edit-button');
+
+        editButton.addEventListener('click', () => {
+            // Allow the user to edit customer information here using a form or input fields.
+            // Update the displayed information accordingly.
+        });
+    </script>
+</body>
+</html>
